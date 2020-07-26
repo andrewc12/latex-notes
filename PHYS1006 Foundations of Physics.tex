@@ -1,10 +1,30 @@
 \documentclass{extarticle}
 \usepackage[utf8]{inputenc}
 
-\usepackage[8pt]{extsizes}
-\usepackage{geometry}
-\geometry{a4paper, portrait, margin=0.5cm, bottom=1.5cm}
-%, right=5cm
+%https://tex.stackexchange.com/a/5896
+\usepackage{etoolbox}
+\newtoggle{editing}
+%\toggletrue{editing}
+\togglefalse{editing}
+%example
+\iftoggle{editing}{%
+  % editing
+}{%
+  % finaloutput
+}
+
+
+\iftoggle{editing}{%
+  % editing
+}{%
+  % finaloutput
+  \usepackage[8pt]{extsizes}
+  \usepackage{geometry}
+  \geometry{a4paper, portrait, margin=0.5cm, bottom=1.5cm}
+  %, right=5cm
+}
+
+
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -21,6 +41,8 @@
 
 %\usepackage[a3paper,margin=0.1in]{geometry}
 %\usepackage[a3paper]{geometry}
+
+
 
 \usepackage{verbatim}
 \usepackage{mathptmx}
