@@ -4,8 +4,8 @@
 %https://tex.stackexchange.com/a/5896
 \usepackage{etoolbox}
 \newtoggle{editing}
-%\toggletrue{editing}
-\togglefalse{editing}
+\toggletrue{editing}
+%\togglefalse{editing}
 %example
 \iftoggle{editing}{%
   % editing
@@ -16,6 +16,10 @@
 
 \iftoggle{editing}{%
   % editing
+  \usepackage[20pt]{extsizes}
+  \usepackage{geometry}
+  \geometry{a4paper, portrait, margin=0.5cm, bottom=1.5cm}
+  %, right=5cm
 }{%
   % finaloutput
   \usepackage[8pt]{extsizes}
@@ -70,7 +74,13 @@
 \raggedbottom
 
 \begin{document} 
-\begin{multicols}{4}
+
+\iftoggle{editing}{%
+  % editing
+}{%
+  % finaloutput
+  \begin{multicols}{4}
+}
 %\chapter{First Chapter}
 
 
@@ -1158,8 +1168,13 @@ $\lambda1 = 1$ has $a.m.=1$ and $g.m.=1$, $\lambda2 = 5$ has $a.m.=2$ and $g.m.=
 
 
 
+\iftoggle{editing}{%
+  % editing
+}{%
+  % finaloutput
+  \end{multicols}
+}
 
-\end{multicols}
 
 
 
