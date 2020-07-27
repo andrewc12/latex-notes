@@ -25,7 +25,7 @@ $(TEX).dvi: $(TEX).tex
 	$(LATEX) -output-format=dvi '$(TEX).tex'
 
 spell:
-	cat '$(TEX).tex' | aspell list -l en_AU -t
+	cat '$(TEX).tex' | aspell list -l en_AU -t | awk '!mem[$$0]++'
 
 png: $(TEX).dvi
 	$(DVIPNG) -D 200 -T tight -norawps "$(TEX).dvi"
