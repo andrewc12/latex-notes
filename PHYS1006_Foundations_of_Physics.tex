@@ -40,6 +40,7 @@
 
 \usepackage{multicol}
 \usepackage{tabu}
+\usepackage{tabularx}
 
 \usepackage[dvipsnames]{xcolor}
 
@@ -70,7 +71,7 @@
 %\markStart[25]
 %\markStart
 
-\newcommand{\markEnd}{
+\newcommand{\markEnd}[0]{
 \end{tcolorbox}
 }
 
@@ -146,7 +147,7 @@ is when velocity and acceleration point in opposite directions.
 
 
 
-\begin{tcolorbox}[enhanced jigsaw,sharp corners,coltext=black,colback=BurntOrange!25!white,boxrule=pt,breakable,size=minimal]
+\markStart[100]
 
 
 \subsection{Motion at Constant Acceleration}
@@ -257,7 +258,7 @@ $v^2 = v_0^2 + 2a(x - x_0)$
 $\bar{v} = \frac{v + v_0}{2}$
 
 
-\begin{tcolorbox}[enhanced jigsaw,sharp corners,coltext=black,colback=BurntOrange!25!white,boxrule=0pt,breakable,size=minimal]
+\markStart[100]
 \subsection{Solving Problems}
 
 1. Read and reread the whole problem carefully before trying to solve it.  
@@ -309,8 +310,7 @@ $t=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$
 
 $g = 9.80 m/s^2$
 
-\begin{tcolorbox}[enhanced jigsaw,sharp corners,coltext=black,colback=BurntOrange!25!white,boxrule=0pt,breakable,size=minimal]
-
+\markStart[25]
 
 \subsection{Stuff about graphing}
 
@@ -345,7 +345,7 @@ $r=\left|\mathbf{v}\right|=\sqrt{x^2+y^2+z^2}$ (Magnitude for 3-space)
 $\theta=\tan^{-1}{(\frac{\mathbf{v}_y}{\mathbf{v}_x})}$
 
 
-\begin{tcolorbox}[enhanced jigsaw,sharp corners,coltext=black,colback=BurntOrange!25!white,boxrule=0pt,breakable,size=minimal]
+\markStart[100]
 
 $\theta = $ \begin{tabu}{|c|c|}
     \hline
@@ -455,7 +455,7 @@ We see that $y$ as a function of $x$ has the form $y = Ax - Bx^2$, where $A$ and
 
 
 
-\begin{tcolorbox}[enhanced jigsaw,sharp corners,coltext=black,colback=BurntOrange!25!white,boxrule=0pt,breakable,size=minimal]
+\markStart[100]
 
 Relative Velocity
 
@@ -524,6 +524,7 @@ $\vec{v}_{AB} = -\vec{v}_{BA}$
 
 
 
+\markStart[100]
 
 
 
@@ -570,6 +571,9 @@ Thus, the work-energy principle is valid only if W is the net work done on the o
 
 
 
+\markEnd
+
+\markStart[100]
 
 
 
@@ -627,6 +631,7 @@ elastic potential energy
 
 
 
+\markEnd
 
 
 
@@ -639,11 +644,11 @@ elastic potential energy
 
 
 
-\begin{tcolorbox}[enhanced jigsaw,sharp corners,coltext=black,colback=BurntOrange!25!white,boxrule=pt,breakable,size=minimal]
+\markStart[100]
 
 DATA
 
-\begin{tabu}{lrl}
+\begin{tabularx}{\textwidth}{Xr@{}l}
 Avogadro's number & $\mathrm{N}_{\mathrm{A}}$ & $=6.02 \times 10^{23} \mathrm{mol}^{-1}$ \\
 
 Planck's constant & & $=6.626 \times 10^{-34} \mathrm{J} \mathrm{s}$ \\
@@ -723,19 +728,28 @@ charge on an electron & & $=1.6 \times 10^{-19} \mathrm{C}$ \\
 
 $1 \mathrm{eV}$ & & $=1.6 \times 10^{-19} \mathrm{J}$ \\
 
-\end{tabu}
+\end{tabularx}
 
 
-\end{tcolorbox}
+\markEnd
 
-\begin{tcolorbox}[enhanced jigsaw,sharp corners,coltext=black,colback=BurntOrange!25!white,boxrule=pt,breakable,size=minimal]
+\markStart[25]
 
 
 FORMULA SHEET
 
 MODULE 1: FUNDAMENTALS
 
-$\sin \theta=\frac{\text { opposite }}{\text { hypotenuse }} \quad \cos \theta=\frac{\text { adjacent }}{\text { hypotenuse }} \quad \tan \theta=\frac{\text { opposite }}{\text { adjacent }}$
+$\sin \theta=\frac{\text { opposite }}{\text { hypotenuse }}$
+
+$\cos \theta=\frac{\text { adjacent }}{\text { hypotenuse }}$
+
+$\tan \theta=\frac{\text { opposite }}{\text { adjacent }}$
+
+\markEnd
+
+\markStart[100]
+
 
 Area of a circle $=\pi r^{2}$
 
@@ -749,7 +763,9 @@ Volume of a cylinder $=\pi r^{2} h \quad$
 
 Density $(\rho)=\frac{\operatorname{mass}(m)}{\text {volume }(V)}$
 
-$v_{\text {average}}=\frac{v_{i}+v_{f}}{2} \quad\left(x_{f}-x_{i}\right)=$displacement$/$distance
+$v_{\text {average}}=\frac{v_{i}+v_{f}}{2}$
+
+$\left(x_{f}-x_{i}\right)=$displacement$/$distance
 
 $v_{f}=v_{i}+a t$
 
@@ -757,27 +773,31 @@ $v_{f}^{2}=v_{i}^{2}+2 a\left(x_{f}-x_{i}\right)$
 
 $\left(x_{f}-x_{i}\right)=v_{i} t+\frac{1}{2} a t^{2}$
 
-$ \mathrm{R}=\frac{\mathrm{v}_{\mathrm{i}}^{2} \sin 2 \theta}{g}, $
-
-$ \mathrm{t}=\frac{\mathrm{v} \sin \theta}{g}$
+$ \mathrm{R}=\frac{\mathrm{v}_{\mathrm{i}}^{2} \sin 2 \theta}{g}, \mathrm{t}=\frac{\mathrm{v} \sin \theta}{g}$
 
 $F=m a \quad \quad F_{\text {friction}}=\mu N \quad W=m g \quad N=m g \cos \theta$
 
 $\mu_{S}=\tan \theta_{c} \quad F_{x}=F \cos \theta, \quad F_{y}=F \sin \theta, F=\sqrt{\left(F_{x}\right)^{2}+\left(F_{y}\right)^{2}}, \tan \theta=\frac{F_{y}}{F_{x}}$
 
-$\text { Work Done }=F d \cos \theta \quad \text { Kinetic Energy }=\frac{1}{2} m v^{2}$
+$\text { Work Done }=F d \cos \theta$
 
-Potential Energy $=m g h$ Work Done $=\Delta$ Kinetic Energy
+$ \text { Kinetic Energy }=\frac{1}{2} m v^{2}$
+
+Potential Energy $=m g h$
+
+Work Done $=\Delta$ Kinetic Energy
 
 Total Mechanical Energy $=$ Kinetic Energy $+$ Potential Energy
 
-$P=\frac{\text {Work}}{\text {time}}=\frac{W}{t}=F v \quad \text { Normal force in an elevator } \mathrm{N}=\mathrm{mg} \pm \mathrm{ma}$
+$P=\frac{\text {Work}}{\text {time}}=\frac{W}{t}=F v$
+
+$\text { Normal force in an elevator } \mathrm{N}=\mathrm{mg} \pm \mathrm{ma}$
 
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw,sharp corners,coltext=black,colback=BurntOrange!25!white,boxrule=pt,breakable,size=minimal]
+\markStart[25]
 
-Propagation of Uncertainties 
+\subsubsection{Propagation of Uncertainties} 
 
 For Additions or Subtractions of measured values
 
@@ -786,36 +806,47 @@ $\mathrm{C}=\mathrm{A} \pm \mathrm{B} \quad \Delta \mathrm{C}=\Delta \mathrm{A} 
 
 For Multiplications and Divisions of measured values
 
-$x=\frac{k^{a} t^{b}}{m^{c} n^{d}} ; \quad \frac{\Delta x}{x}=a \frac{\Delta k}{k}+b \frac{\Delta t}{t}+c \frac{\Delta m}{m}+d \frac{\Delta n}{n}$
+$x=\frac{k^{a} t^{b}}{m^{c} n^{d}} \quad \frac{\Delta x}{x}=a \frac{\Delta k}{k}+b \frac{\Delta t}{t}+c \frac{\Delta m}{m}+d \frac{\Delta n}{n}$
 
 
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw,sharp corners,coltext=black,colback=BurntOrange!25!white,boxrule=pt,breakable,size=minimal]
+\markStart[100]
 
 MODULE 2:
 
-Data Charge on electron $=1.6 \times 10^{-19} \mathrm{C} \quad$
+Data
 
-Mass of electron $=9.11 \times 10^{-31} \mathrm{kg}$
+\begin{tabularx}{\textwidth}{Xr@{}l}
 
-Charge on proton $=1.6 \times 10^{-19} \mathrm{C} \quad$
+Charge on electron & & $=1.6 \times 10^{-19} \mathrm{C} \quad$ \\
 
-Mass of proton $=1.67 \times 10^{-27} \mathrm{kg}$
+Mass of electron & & $=9.11 \times 10^{-31} \mathrm{kg}$ \\
 
-Coulomb constant $\mathrm{k}=9.0 \times 10^{9} \mathrm{N} . \mathrm{m}^{2} / \mathrm{C}^{2}$
+Charge on proton & & $=1.6 \times 10^{-19} \mathrm{C} \quad$ \\
 
-$1 \mathrm{eV}=1.6 \times 10^{-19} \mathrm{J}$
+Mass of proton & & $=1.67 \times 10^{-27} \mathrm{kg}$ \\
 
-Permittivity of free space $\varepsilon \mathrm{O}=8.85 \times 10^{-12} \mathrm{C}^{2} / \mathrm{N} . \mathrm{m}^{2}$
+Coulomb constant & $\mathrm{k}$ & $=9.0 \times 10^{9} \mathrm{N} . \mathrm{m}^{2} / \mathrm{C}^{2}$ \\
 
-Permeability of free space $\mu \mathrm{o}=4 \pi \times 10^{-7} \mathrm{T} . \mathrm{m} / \mathrm{A}$
+$1 \mathrm{eV}$ & & $=1.6 \times 10^{-19} \mathrm{J}$ \\
 
-Resistivity of nichrome, $\rho=100 \times 10^{-8} \Omega . \mathrm{m}$ 
+Permittivity of free space & $\varepsilon \mathrm{O}$ & $=8.85 \times 10^{-12} \mathrm{C}^{2} / \mathrm{N} . \mathrm{m}^{2}$ \\
 
-Resistivity of copper, $\rho=1.68 \times 10^{-8} \Omega . \mathrm{m}$
+Permeability of free space & $\mu \mathrm{o}$ & $=4 \pi \times 10^{-7} \mathrm{T} . \mathrm{m} / \mathrm{A}$ \\
 
-speed of light (in vacuum) $c=3$ x $10^{8} \mathrm{ms}^{-1}$
+Resistivity of nichrome, & $\rho$ & $=100 \times 10^{-8} \Omega . \mathrm{m}$ \\
+
+Resistivity of copper, & $\rho$ & $=1.68 \times 10^{-8} \Omega . \mathrm{m}$ \\
+
+speed of light (in vacuum) & $c$ & $=3$ x $10^{8} \mathrm{ms}^{-1}$ \\
+
+\end{tabularx}
+
+\markEnd
+
+\markStart[100]
+
 
 Formula Sheet
 
@@ -856,7 +887,7 @@ B=\frac{\mu_{o} I}{2 \pi r} & \frac{V_{S}}{V_{P}}=\frac{N_{S}}{N_{p}}=\frac{I_{P
 
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw,sharp corners,coltext=black,colback=BurntOrange!25!white,boxrule=pt,breakable,size=minimal]
+\markStart[100]
 
 MODULE 3: WAVES and SOUND
 
@@ -912,7 +943,7 @@ $\beta_{2}-\beta_{1}=\Delta \beta=\log \left(\frac{I_{2}}{I_{1}}\right) \quad \m
 
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw,sharp corners,coltext=black,colback=BurntOrange!25!white,boxrule=pt,breakable,size=minimal]
+\markStart[100]
 
 MODULE 4: THERMAL PHYSICS
 
@@ -949,7 +980,7 @@ $\mathrm{v}_{\mathrm{rms}}=\sqrt{\frac{3 k_{B} T}{m}}(r m s \text { speed of moe
 
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw,sharp corners,coltext=black,colback=BurntOrange!25!white,boxrule=pt,breakable,size=minimal]
+\markStart[100]
 
 MODULE 5: OPTICS
 
@@ -981,34 +1012,35 @@ $\mathrm{I}=(1 / 2) \mathrm{I}_{\mathrm{O}} \cos ^{2} \theta$
 
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw,sharp corners,coltext=black,colback=BurntOrange!25!white,boxrule=pt,breakable,size=minimal]
+\markStart[100]
 
 MODULE 6: NUCLEAR RADIATION 
 
-\begin{tabular}{ll} 
+\begin{tabularx}{\textwidth}{Xr@{}l}
 
-charge on an electron & $=1.6 \times 10^{-19} \mathrm{C}$ \\
+charge on an electron & & $=1.6 \times 10^{-19} \mathrm{C}$ \\
 
-$1 \mathrm{eV}$ & $=1.6 \times 10^{-19} \mathrm{J}$ \\
+$1 \mathrm{eV}$ & & $=1.6 \times 10^{-19} \mathrm{J}$ \\
 
-mass of neutron & $=1.008665 \mathrm{u}$ \\
+mass of neutron & & $=1.008665 \mathrm{u}$ \\
 
-mass of hydrogen atom & $=1.007825 \mathrm{u}$ \\
+mass of hydrogen atom & & $=1.007825 \mathrm{u}$ \\
 
-mass of ${ }^{4} \mathrm{He}$ atom & $=4.002602 \mathrm{u}$ \\
+mass of ${ }^{4} \mathrm{He}$ atom & & $=4.002602 \mathrm{u}$ \\
 
-atomic mass unit & $1 \mathrm{u}=1.66 \times 10^{-27} \mathrm{kg},=931.5 \mathrm{MeV} / \mathrm{c}^{2}$ \\
+atomic mass unit & $1 \mathrm{u}$ & $=1.66 \times 10^{-27} \mathrm{kg}, =931.5 \mathrm{MeV} / \mathrm{c}^{2}$ \\
 
-mass of electron & $=9.11 \times 10^{-31} \mathrm{kg}$ \\
+mass of electron & & $=9.11 \times 10^{-31} \mathrm{kg}$ \\
 
-mass of proton & $=1.67 \mathrm{x} 10^{-27} \mathrm{kg}$ \\
+mass of proton & & $=1.67 \mathrm{x} 10^{-27} \mathrm{kg}$ \\
 
-\hline
-
-\end{tabular}
+\end{tabularx}
 
 
 
+\markEnd
+
+\markStart[100]
 
 
 
