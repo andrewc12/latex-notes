@@ -16,7 +16,8 @@
   %\usepackage[20pt]{extsizes}
   \usepackage{extsizes}
   \usepackage{geometry}
-  \geometry{a6paper, portrait, margin=0.2cm, bottom=1.5cm} %, right=5cm
+  %\geometry{a6paper, portrait, margin=0.2cm, bottom=1.5cm} %, right=5cm
+  \geometry{a4paper, portrait, margin=0.5cm, bottom=1.5cm} %, right=5cm
 }{% finaloutput
   \usepackage[8pt]{extsizes}
   \usepackage{geometry}
@@ -614,7 +615,6 @@ elastic potential energy
 
 
 
-\begin{tcolorbox}[enhanced jigsaw,sharp corners,coltext=black,colback=BurntOrange!25!white,boxrule=pt,breakable,size=minimal]
 
 
 
@@ -624,79 +624,97 @@ elastic potential energy
 
 
 
-
+\begin{tcolorbox}[enhanced jigsaw,sharp corners,coltext=black,colback=BurntOrange!25!white,boxrule=pt,breakable,size=minimal]
 
 DATA
 
-Avogadro's number $\mathrm{N}_{\mathrm{A}}=6.02 \times 10^{23} \mathrm{mol}^{-1}$
+\begin{tabu}{lrl}
+Avogadro's number & $\mathrm{N}_{\mathrm{A}}$ & $=6.02 \times 10^{23} \mathrm{mol}^{-1}$ \\
 
-Planck's constant $=6.626 \times 10^{-34} \mathrm{J} \mathrm{s}$
+Planck's constant & & $=6.626 \times 10^{-34} \mathrm{J} \mathrm{s}$ \\
 
-Stephan-Boltzmann's constant $=5.67 \times 10^{-8} \mathrm{W} \mathrm{m}^{-2} \mathrm{K}^{-4}$
+Stephan-Boltzmann's constant & & $=5.67 \times 10^{-8} \mathrm{W} \mathrm{m}^{-2} \mathrm{K}^{-4}$ \\
 
-Boltzmann's constant $=1.38 \times 10^{-23} \mathrm{J} \mathrm{K}^{-1}$
+Boltzmann's constant & & $=1.38 \times 10^{-23} \mathrm{J} \mathrm{K}^{-1}$ \\
 
-$\begin{array}{lll}\text { Gravitational constant } & \mathrm{G} & =6.67 \times 10^{-11} \mathrm{N} \cdot \mathrm{m}^{2} \cdot \mathrm{kg}^{-2} \\ \text {Radius of the Earth } & \mathrm{R}_{\mathrm{E}} & =6.38 \times 10^{6} \mathrm{m}\end{array}$
 
-Mass of the Earth $\mathrm{M}_{\mathrm{E}}=5.98 \times 10^{24} \mathrm{kg}$
 
-$\begin{array}{lll}\text { Gas constant } & \mathrm{R} & =8.314 \mathrm{J} / \mathrm{mol} . \mathrm{K} \\ \text { Permittivity of free space } & \varepsilon_{\mathrm{o}} & =8.85 \times 10^{-12} \mathrm{C}^{2} / \mathrm{N} \cdot \mathrm{m}^{2}\end{array}$
+Gravitational constant & $\mathrm{G}$ & $=6.67 \times 10^{-11} \mathrm{N} \cdot \mathrm{m}^{2} \cdot \mathrm{kg}^{-2}$ \\
+Radius of the Earth & $\mathrm{R}_{\mathrm{E}}$ & $=6.38 \times 10^{6} \mathrm{m}$ \\
 
-Permeability of free space $\mu$ o $\quad=4 \pi \times 10^{-7} \mathrm{T} . \mathrm{m} / \mathrm{A}$
+Mass of the Earth & $\mathrm{M}_{\mathrm{E}}$ & $=5.98 \times 10^{24} \mathrm{kg}$ \\
 
-Coulomb constant $=9.0 \times 10^{9} \mathrm{N} \mathrm{m}^{2} / \mathrm{C}^{2}$
+Gas constant & $\mathrm{R}$ & $=8.314 \mathrm{J} / \mathrm{mol} . \mathrm{K}$ \\
 
-acceleration due to gravity $\mathrm{g}=9.80 \mathrm{m} \mathrm{s}^{-2}$
+Permittivity of free space & $\varepsilon_{\mathrm{o}}$ & $=8.85 \times 10^{-12} \mathrm{C}^{2} / \mathrm{N} \cdot \mathrm{m}^{2}$ \\
 
-index of refraction of air (STP) $\mathrm{n} \quad=1.0003$
+Permeability of free space & $\mathrm{\mu o}$ & $=4 \pi \times 10^{-7} \mathrm{T} . \mathrm{m} / \mathrm{A}$ \\
 
-speed of light (in vacuum) $\mathrm{c}=3 \times 10^{8} \mathrm{ms}^{-1}$
+Coulomb constant & & $=9.0 \times 10^{9} \mathrm{N} \mathrm{m}^{2} / \mathrm{C}^{2}$ \\
 
-speed of sound (at $\left.0^{\circ} \mathrm{C}\right)$ $\mathrm{v}=331 \mathrm{ms}^{-1}$
+acceleration due to gravity & $\mathrm{g}$ & $=9.80 \mathrm{m} \mathrm{s}^{-2}$ \\
 
-$\begin{array}{ll}\mathrm{Pi} & \pi \quad=3.1416 \\ \text { Volume } 1 \text { litre }=1000 \mathrm{cm}^{3} & \\ \text { density of water } & \rho \quad=1000 \mathrm{kg} \mathrm{m}^{-3}\end{array}$
 
-density of air $=1.29 \mathrm{kg} \mathrm{m}^{-3}$
 
-atmospheric pressure $1 \mathrm{atm}=1.013 \times 10^{5} \mathrm{Pa}$
+index of refraction of air (STP) & $\mathrm{n}$ & $=1.0003$ \\
 
-volume of air at STP $=22.4 \mathrm{L}$
+speed of light (in vacuum) & $\mathrm{c}$ & $=3 \times 10^{8} \mathrm{ms}^{-1}$ \\
 
-coefficient of thermal conductivity for brick $=0.84 \mathrm{J} \mathrm{m}^{-1} \mathrm{s}^{-1} \mathrm{K}^{-1}$
+speed of sound (at $\left.0^{\circ} \mathrm{C}\right)$ & $\mathrm{v}$ & $=331 \mathrm{ms}^{-1}$ \\
 
-coefficient of thermal conductivity for glass $=0.84 \mathrm{J} \mathrm{m}^{-1} \mathrm{s}^{-1} \mathrm{K}^{-1}$
+Pi & $\pi$ & $=3.1416$ \\
 
-zero Kelvin $=-273^{\circ} \mathrm{C}$
+Volume & $1 \text {litre}$ & $=1000 \mathrm{cm}^{3}$ \\
 
-freezing point of water $=0^{\circ} \mathrm{C}=32^{\circ} \mathrm{F}$
+density of water & $\rho$ & $=1000 \mathrm{kg} \mathrm{m}^{-3}$ \\
 
-boiling point of water $=100^{\circ} \mathrm{C}=212^{\circ} \mathrm{F}$
+density of air & & $=1.29 \mathrm{kg} \mathrm{m}^{-3}$ \\
 
-specific heat of water $c_{\text {water }}=4186 \mathrm{J} \mathrm{kg}^{-1} \mathrm{C}^{\circ-1}$
+atmospheric pressure & $1 \mathrm{atm}$ & $=1.013 \times 10^{5} \mathrm{Pa}$ \\
 
-specific heat of ice $\quad \mathrm{c}_{\mathrm{ice}}=2100 \mathrm{J} \mathrm{kg}^{-1} \mathrm{C}^{\circ-1}$
+volume of air at STP & & $=22.4 \mathrm{L}$ \\
 
-specific heat of iron $\quad \mathrm{c}_{\text {iron }}=450 \mathrm{J} \mathrm{kg}^{-1} \mathrm{C}^{\circ-1}$
+coefficient of thermal conductivity for brick & & $=0.84 \mathrm{J} \mathrm{m}^{-1} \mathrm{s}^{-1} \mathrm{K}^{-1}$ \\
 
-specific heat of copper $\mathbf{c}_{\mathrm{cu}}=390 \mathrm{J} \mathrm{kg}^{-1} \mathrm{C}^{\circ-1}$
+coefficient of thermal conductivity for glass & & $=0.84 \mathrm{J} \mathrm{m}^{-1} \mathrm{s}^{-1} \mathrm{K}^{-1}$ \\
 
-specific heat of aluminum $\quad \mathrm{c}_{\mathrm{Al}}=900 \mathrm{J} \mathrm{kg}^{-1} \mathrm{C}^{\circ-1}$
+zero Kelvin & & $=-273^{\circ} \mathrm{C}$ \\
 
-latent heat of vaporization of water $=2.26 \times 10^{6} \mathrm{J} \mathrm{kg}^{-1}$
+freezing point of water & & $=0^{\circ} \mathrm{C}=32^{\circ} \mathrm{F}$ \\
 
-latent heat of fusion of ice $\quad=3.33 \times 10^{5} \mathrm{J} \mathrm{kg}^{-1}$
+boiling point of water & & $=100^{\circ} \mathrm{C}=212^{\circ} \mathrm{F}$ \\
 
-coefficient of volume expansion of petrol $=950 \times 10^{-6} \mathrm{C}^{\circ-1}$
+specific heat of water & $\mathrm{c}_{\text {water }}$ & $=4186 \mathrm{J} \mathrm{kg}^{-1} \mathrm{C}^{\circ-1}$ \\
 
-coefficient of linear expansion of steel/iron $=12 \times 10^{-6} \mathrm{C}^{\circ-1}$
+specific heat of ice & $\quad \mathrm{c}_{\mathrm{ice}}$ & $=2100 \mathrm{J} \mathrm{kg}^{-1} \mathrm{C}^{\circ-1}$ \\
 
-coefficient of linear expansion of brass $=19 \times 10^{-6} \mathrm{C}^{\circ-1}$
+specific heat of iron & $\quad \mathrm{c}_{\text {iron }}$ & $=450 \mathrm{J} \mathrm{kg}^{-1} \mathrm{C}^{\circ-1}$ \\
 
-charge on an electron $=1.6 \times 10^{-19} \mathrm{C}$
+specific heat of copper & $\mathrm{c}_{\mathrm{cu}}$ & $=390 \mathrm{J} \mathrm{kg}^{-1} \mathrm{C}^{\circ-1}$ \\
 
-$1 \mathrm{eV}$
+specific heat of aluminum & $\mathrm{c}_{\mathrm{Al}}$ & $=900 \mathrm{J} \mathrm{kg}^{-1} \mathrm{C}^{\circ-1}$ \\
 
-$=1.6 \times 10^{-19} \mathrm{J}$
+latent heat of vaporization of water & & $=2.26 \times 10^{6} \mathrm{J} \mathrm{kg}^{-1}$ \\
+
+latent heat of fusion of ice & & $=3.33 \times 10^{5} \mathrm{J} \mathrm{kg}^{-1}$ \\
+
+coefficient of volume expansion of petrol & & $=950 \times 10^{-6} \mathrm{C}^{\circ-1}$ \\
+
+coefficient of linear expansion of steel/iron & & $=12 \times 10^{-6} \mathrm{C}^{\circ-1}$ \\
+
+coefficient of linear expansion of brass & & $=19 \times 10^{-6} \mathrm{C}^{\circ-1}$ \\
+
+charge on an electron & & $=1.6 \times 10^{-19} \mathrm{C}$ \\
+
+$1 \mathrm{eV}$ & & $=1.6 \times 10^{-19} \mathrm{J}$ \\
+
+\end{tabu}
+
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw,sharp corners,coltext=black,colback=BurntOrange!25!white,boxrule=pt,breakable,size=minimal]
+
 
 FORMULA SHEET
 
@@ -746,6 +764,9 @@ For Additions or Subtractions of measured values
 For Multiplications and Divisions of measured values $x=\frac{k^{a} t^{b}}{m^{c} n^{d}} ; \quad \frac{\Delta x}{x}=a \frac{\Delta k}{k}+b \frac{\Delta t}{t}+c \frac{\Delta m}{m}+d \frac{\Delta n}{n}$
 
 
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw,sharp corners,coltext=black,colback=BurntOrange!25!white,boxrule=pt,breakable,size=minimal]
 
 MODULE
 
@@ -800,6 +821,9 @@ B=\frac{\mu_{o} I}{2 \pi r} & \frac{V_{S}}{V_{P}}=\frac{N_{S}}{N_{p}}=\frac{I_{P
 
 \end{array}$
 
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw,sharp corners,coltext=black,colback=BurntOrange!25!white,boxrule=pt,breakable,size=minimal]
 
 MODULE 3: WAVES and SOUND
 
@@ -859,6 +883,11 @@ where $I_{0}=1.0 \times 10^{-12} W / m^{2}$
 
 $\beta_{2}-\beta_{1}=\Delta \beta=\log \left(\frac{I_{2}}{I_{1}}\right) \quad \mathrm{I}=\text { Power } / 4 \pi r^{2}$
 
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw,sharp corners,coltext=black,colback=BurntOrange!25!white,boxrule=pt,breakable,size=minimal]
+
 MODULE 4: THERMAL PHYSICS
 
 $T\left({ }^{o} C\right)=\frac{5}{9}[T(F)-32]$
@@ -891,6 +920,11 @@ $\overline{\mathrm{KE}}=\frac{3}{2} k_{B} T$
 
 $\mathrm{v}_{\mathrm{rms}}=\sqrt{\frac{3 k_{B} T}{m}}(r m s \text { speed of moecule }) \quad$ where $\mathrm{m}$ is the mass of a molecule
 
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw,sharp corners,coltext=black,colback=BurntOrange!25!white,boxrule=pt,breakable,size=minimal]
+
 MODULE 5: OPTICS
 
 Index of refraction $n=c / \nu \quad$ Snell's Law, $n_{1} \sin \theta_{1}=n_{2} \sin \theta_{2}$
@@ -916,6 +950,12 @@ Brewster's Law $\quad \tan \theta_{\mathrm{p}}=\mathrm{n}_{2} / \mathrm{n}_{1}$
 Malus' Law: : : : : : Lawlus' Law:: : : :
 
 $\mathrm{I}=(1 / 2) \mathrm{I}_{\mathrm{O}} \cos ^{2} \theta$
+
+
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw,sharp corners,coltext=black,colback=BurntOrange!25!white,boxrule=pt,breakable,size=minimal]
 
 MODULE 6: NUCLEAR RADIATION 
 
