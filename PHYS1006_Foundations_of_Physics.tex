@@ -56,7 +56,23 @@
 %https://tex.stackexchange.com/a/161265
 \everymath\expandafter{\the\everymath\displaystyle}
 
+
+
+
+
 \begin{document} 
+
+
+\newcommand{\markStart}[1][25]{
+\begin{tcolorbox}[enhanced jigsaw,sharp corners,coltext=black,colback=BurntOrange!#1!white,boxrule=pt,breakable,size=minimal]
+}
+
+%\markStart[25]
+%\markStart
+
+\newcommand{\markEnd}{
+\end{tcolorbox}
+}
 
 \iftoggle{editing}{% editing
 }{% finaloutput
@@ -124,7 +140,6 @@ $a = \lim_{\Delta t \to 0} \frac{\Delta v}{\Delta t}$
 is whenever the magnitude of the velocity is decreasing.
 
 is when velocity and acceleration point in opposite directions.
-
 
 
 
