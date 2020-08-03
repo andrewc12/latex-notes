@@ -6,28 +6,21 @@
 \newtoggle{editing}
 \toggletrue{editing}
 %\togglefalse{editing}
+
 %example
-\iftoggle{editing}{%
-  % editing
-}{%
-  % finaloutput
+\iftoggle{editing}{% editing
+}{% finaloutput
 }
 
-
-\iftoggle{editing}{%
-  % editing
+\iftoggle{editing}{% editing
   %\usepackage[20pt]{extsizes}
   \usepackage{extsizes}
   \usepackage{geometry}
-  %\geometry{a5paper, portrait, margin=1.5cm, bottom=1.5cm}
-  \geometry{a6paper, portrait, margin=0.2cm, bottom=1.5cm}
-  %, right=5cm
-}{%
-  % finaloutput
+  \geometry{a6paper, portrait, margin=0.2cm, bottom=1.5cm} %, right=5cm
+}{% finaloutput
   \usepackage[8pt]{extsizes}
   \usepackage{geometry}
-  \geometry{a4paper, portrait, margin=0.5cm, bottom=1.5cm}
-  %, right=5cm
+  \geometry{a4paper, portrait, margin=0.5cm, bottom=1.5cm} %, right=5cm
 }
 
 
@@ -38,30 +31,14 @@
 \fancyfoot[C]{}
 \fancyfoot[R]{}
 
-%\documentclass[20pt]{extarticle}
-%\documentclass[a5paper,11pt]{article}
-%\documentclass[6pt]{extarticle}
-%\documentclass[14pt]{extarticle}
-%\documentclass[a3paper,11pt]{article}
-
-
-%\usepackage[a3paper,margin=0.1in]{geometry}
-%\usepackage[a3paper]{geometry}
-
-
-
 \usepackage{verbatim}
 \usepackage{mathptmx}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{gensymb}
-%\usepackage{extsizes}
 
 \usepackage{multicol}
 \usepackage{tabu}
-
-
-
 
 \usepackage[dvipsnames]{xcolor}
 
@@ -70,7 +47,7 @@
 
 %\usepackage[subtle]{savetrees}
 %\usepackage[moderate]{savetrees}
-\usepackage[extreme]{savetrees}
+%\usepackage[extreme]{savetrees}
 
 \raggedright
 \raggedbottom
@@ -80,19 +57,15 @@
 
 \begin{document} 
 
-\iftoggle{editing}{%
-  % editing
-}{%
-  % finaloutput
+\iftoggle{editing}{% editing
+}{% finaloutput
   \begin{multicols}{3}
 }
 %\chapter{First Chapter}
 
-
 %\smallskip
 %\medskip
 %\bigskip
-
 
 %gets rid of section counters 
 \setcounter{secnumdepth}{0}
@@ -641,6 +614,468 @@ elastic potential energy
 
 
 
+\begin{tcolorbox}[enhanced jigsaw,sharp corners,coltext=black,colback=BurntOrange!25!white,boxrule=pt,breakable,size=minimal]
+
+
+
+
+
+\subsection{Phys1006 formula sheet}
+
+
+
+
+
+DATA
+
+Avogadro's number $\mathrm{N}_{\mathrm{A}}=6.02 \times 10^{23} \mathrm{mol}^{-1}$
+
+Planck's constant $=6.626 \times 10^{-34} \mathrm{J} \mathrm{s}$
+
+Stephan-Boltzmann's constant $=5.67 \times 10^{-8} \mathrm{W} \mathrm{m}^{-2} \mathrm{K}^{-4}$
+
+Boltzmann's constant $=1.38 \times 10^{-23} \mathrm{J} \mathrm{K}^{-1}$
+
+$\begin{array}{lll}\text { Gravitational constant } & \mathrm{G} & =6.67 \times 10^{-11} \mathrm{N} \cdot \mathrm{m}^{2} \cdot \mathrm{kg}^{-2} \\ \text {Radius of the Earth } & \mathrm{R}_{\mathrm{E}} & =6.38 \times 10^{6} \mathrm{m}\end{array}$
+
+Mass of the Earth $\mathrm{M}_{\mathrm{E}}=5.98 \times 10^{24} \mathrm{kg}$
+
+$\begin{array}{lll}\text { Gas constant } & \mathrm{R} & =8.314 \mathrm{J} / \mathrm{mol} . \mathrm{K} \\ \text { Permittivity of free space } & \varepsilon_{\mathrm{o}} & =8.85 \times 10^{-12} \mathrm{C}^{2} / \mathrm{N} \cdot \mathrm{m}^{2}\end{array}$
+
+Permeability of free space $\mu$ o $\quad=4 \pi \times 10^{-7} \mathrm{T} . \mathrm{m} / \mathrm{A}$
+
+Coulomb constant $=9.0 \times 10^{9} \mathrm{N} \mathrm{m}^{2} / \mathrm{C}^{2}$
+
+acceleration due to gravity $\mathrm{g}=9.80 \mathrm{m} \mathrm{s}^{-2}$
+
+index of refraction of air (STP) $\mathrm{n} \quad=1.0003$
+
+speed of light (in vacuum) $\mathrm{c}=3 \times 10^{8} \mathrm{ms}^{-1}$
+
+speed of sound (at $\left.0^{\circ} \mathrm{C}\right)$ $\mathrm{v}=331 \mathrm{ms}^{-1}$
+
+$\begin{array}{ll}\mathrm{Pi} & \pi \quad=3.1416 \\ \text { Volume } 1 \text { litre }=1000 \mathrm{cm}^{3} & \\ \text { density of water } & \rho \quad=1000 \mathrm{kg} \mathrm{m}^{-3}\end{array}$
+
+density of air $=1.29 \mathrm{kg} \mathrm{m}^{-3}$
+
+atmospheric pressure $1 \mathrm{atm}=1.013 \times 10^{5} \mathrm{Pa}$
+
+volume of air at STP $=22.4 \mathrm{L}$
+
+
+
+
+
+volume of air at STP $=22.4 \mathrm{L}$
+
+coefficient of thermal conductivity for brick $=0.84 \mathrm{J} \mathrm{m}^{-1} \mathrm{s}^{-1} \mathrm{K}^{-1}$
+
+coefficient of thermal conductivity for glass $=0.84 \mathrm{J} \mathrm{m}^{-1} \mathrm{s}^{-1} \mathrm{K}^{-1}$
+
+zero Kelvin $=-273^{\circ} \mathrm{C}$
+
+freezing point of water $=0^{\circ} \mathrm{C}=32^{\circ} \mathrm{F}$
+
+boiling point of water $=100^{\circ} \mathrm{C}=212^{\circ} \mathrm{F}$
+
+specific heat of water $c_{\text {water }}=4186 \mathrm{J} \mathrm{kg}^{-1} \mathrm{C}^{\circ-1}$
+
+specific heat of ice $\quad \mathrm{c}_{\mathrm{ice}}=2100 \mathrm{J} \mathrm{kg}^{-1} \mathrm{C}^{\circ-1}$
+
+specific heat of iron $\quad \mathrm{c}_{\text {iron }}=450 \mathrm{J} \mathrm{kg}^{-1} \mathrm{C}^{\circ-1}$
+
+specific heat of copper $\mathbf{c}_{\mathrm{cu}}=390 \mathrm{J} \mathrm{kg}^{-1} \mathrm{C}^{\circ-1}$
+
+specific heat of aluminum $\quad \mathrm{c}_{\mathrm{Al}}=900 \mathrm{J} \mathrm{kg}^{-1} \mathrm{C}^{\circ-1}$
+
+latent heat of vaporization of water $=2.26 \times 10^{6} \mathrm{J} \mathrm{kg}^{-1}$
+
+latent heat of fusion of ice $\quad=3.33 \times 10^{5} \mathrm{J} \mathrm{kg}^{-1}$
+
+coefficient of volume expansion of petrol $=950 \times 10^{-6} \mathrm{C}^{\circ-1}$
+
+coefficient of linear expansion of steel/iron $=12 \times 10^{-6} \mathrm{C}^{\circ-1}$
+
+coefficient of linear expansion of brass $=19 \times 10^{-6} \mathrm{C}^{\circ-1}$
+
+charge on an electron $=1.6 \times 10^{-19} \mathrm{C}$
+
+$1 \mathrm{eV}$
+
+$=1.6 \times 10^{-19} \mathrm{J}$
+
+
+
+
+
+FORMULA SHEET
+
+MODULE 1: FUNDAMENTALS
+
+$\sin \theta=\frac{\text { opposite }}{\text { hypotenuse }} \quad \cos \theta=\frac{\text { adjacent }}{\text { hypotenuse }} \quad \tan \theta=\frac{\text { opposite }}{\text { adjacent }}$
+
+Area of a circle $=\pi r^{2} ; \quad$ Circumference of a circle $=2 \pi r$
+
+Surface area of a sphere $=4 \pi r^{2} \quad$ Volume of a sphere $=\frac{4}{3} \pi r^{3}$
+
+Volume of a cylinder $=\pi r^{2} h \quad$ Density $(\rho)=\frac{\operatorname{mass}(m)}{\text {volume }(V)}$
+
+$v_{\text {average}}=\frac{v_{i}+v_{f}}{2} \quad\left(x_{f}-x_{i}\right)=$displacement$/$distance
+
+$v_{f}=v_{i}+a t$
+
+$v_{f}^{2}=v_{i}^{2}+2 a\left(x_{f}-x_{i}\right)$
+
+$\left(x_{f}-x_{i}\right)=v_{i} t+\frac{1}{2} a t^{2} \quad \mathrm{R}=\frac{\mathrm{v}_{\mathrm{i}}^{2} \sin 2 \theta}{g}, \quad \mathrm{t}=\frac{\mathrm{v} \sin \theta}{g}$
+
+$F=m a \quad F_{\text {friction}}=\mu N \quad N=m g \cos \theta$
+
+
+
+
+
+$F=m a \quad \quad F_{\text {friction}}=\mu N \quad N=m g \quad N=m g \cos \theta$
+
+$\mu_{S}=\tan \theta_{c} \quad F_{x}=F \cos \theta, \quad F_{y}=F \sin \theta, F=\sqrt{\left(F_{x}\right)^{2}+\left(F_{y}\right)^{2}}, \tan \theta=\frac{F_{y}}{F_{x}}$
+
+\[
+\text { Work Done }=F d \cos \theta \quad \text { Kinetic Energy }=\frac{1}{2} m v^{2}
+\]
+
+Potential Energy $=m g h$ Work Done $=\Delta$ Kinetic Energy
+
+Total Mechanical Energy $=$ Kinetic Energy $+$ Potential Energy
+
+\[
+P=\frac{\text {Work}}{\text {time}}=\frac{W}{t}=F v \quad \text { Normal force in an elevator } \mathrm{N}=\mathrm{mg} \pm \mathrm{ma}
+\]
+
+Propagation of Uncertainties 
+
+For Additions or Subtractions of measured values
+
+\[
+\mathrm{C}=\mathrm{A} \pm \mathrm{B} \quad \Delta \mathrm{C}=\Delta \mathrm{A} \pm \Delta \mathrm{B}
+\]
+
+For Multiplications and Divisions of measured values
+
+
+
+For Multiplications and Divisions of measured values $x=\frac{k^{a} t^{b}}{m^{c} n^{d}} ; \quad \frac{\Delta x}{x}=a \frac{\Delta k}{k}+b \frac{\Delta t}{t}+c \frac{\Delta m}{m}+d \frac{\Delta n}{n}$
+
+
+
+MODULE
+
+2:
+
+Data Charge on electron $=1.6 \times 10^{-19} \mathrm{C} \quad$ Mass of electron $=9.11 \times 10^{-31} \mathrm{kg}$ Charge on proton $=1.6 \times 10^{-19} \mathrm{C} \quad$ Mass of proton $=1.67 \times 10^{-27} \mathrm{kg}$
+
+Coulomb constant $\mathrm{k}=9.0 \times 10^{9} \mathrm{N} . \mathrm{m}^{2} / \mathrm{C}^{2} \quad 1 \mathrm{eV}=1.6 \times 10^{-19} \mathrm{J}$
+
+Permittivity of free space $\varepsilon \mathrm{O}=8.85 \times 10^{-12} \mathrm{C}^{2} / \mathrm{N} . \mathrm{m}^{2}$
+
+Permeability of free space $\mu \mathrm{o}=4 \pi \times 10^{-7} \mathrm{T} . \mathrm{m} / \mathrm{A}$
+
+Resistivity of nichrome, $\rho=100 \times 10^{-8} \Omega . \mathrm{m}$ Resistivity of copper, $\rho=1.68 \times 10^{-8} \Omega . \mathrm{m}$ speed of light (in vacuum) $c=3$ x $10^{8} \mathrm{ms}^{-1}$
+
+Formula Sheet
+
+$\mathrm{F}=\frac{k q_{1} q_{2}}{r^{2}} \quad \mathrm{E}_{\text {isolated charge }}=\frac{F}{q}=\frac{k q_{1}}{r^{2}} \quad \mathrm{V}=\mathrm{Ed}(\text { uniform } \mathbf{E})$
+
+\[
+\mathrm{V}=\mathrm{IR}
+\]
+
+$\mathrm{R}=\frac{\rho \mathrm{L}}{\mathrm{A}} \quad I=Q / t$
+
+
+
+
+
+$\begin{array}{lll}
+
+\mathrm{V}=\mathrm{IR} & \mathrm{R}=\frac{\rho \mathrm{L}}{\mathrm{A}} & I=Q / t \\
+
+\mathrm{V}=\mathrm{IR} & \mathrm{W}=\mathrm{qV} & \mathrm{P}=\mathrm{VI}=\mathrm{I}^{2} R=\frac{V^{2}}{R} \\
+
+\mathrm{C}=\frac{\varepsilon_{0} A}{\mathrm{d}}=\frac{k \varepsilon_{0} A}{\mathrm{d}} & Q=C V & \mathrm{U}=\frac{1}{2} C V^{2} \\
+
+\mathrm{R}_{\text {series }}=\sum_{i} R_{i}=R+R_{2}+R_{3} & \frac{1}{\mathrm{R}_{\text {parallel }}}=\sum_{i} \frac{1}{R_{i}}=\frac{1}{R_{1}}+\frac{1}{R_{2}}+\frac{1}{R_{3}} \\
+
+\mathrm{P}=\mathrm{VI}=\mathrm{I}^{2} R=\frac{V^{2}}{R} & \mathrm{R}_{\mathrm{T}}=\mathrm{R}_{\mathrm{o}}(1+\alpha \Delta T) \\
+
+\mathrm{P}_{\max }=\mathrm{I}_{\mathrm{o}} V_{o} & \mathrm{P}_{\text {average }}=\mathrm{I}_{\mathrm{rms}} V_{r m s}=\mathrm{I}_{\mathrm{o}} V_{o} / 2 \\
+
+\mathrm{F}=\mathrm{qvBsin} \theta & \mathrm{F}=\mathrm{IlBsin} \theta
+
+\end{array}$
+
+
+
+$\begin{array}{ll}
+
+\mathrm{F}=\mathrm{qvBsin} \theta \quad & \mathrm{F}=\mathrm{IlBsin} \theta \\
+
+\phi_{\mathrm{B}}=A B \cos \theta & \varepsilon=\frac{-N \Delta \Phi_{B}}{\Delta t} \quad \varepsilon=\mathrm{Blvsin} \theta \\
+
+B=\frac{\mu_{o} I}{2 \pi r} & \frac{V_{S}}{V_{P}}=\frac{N_{S}}{N_{p}}=\frac{I_{P}}{I_{S}}
+
+\end{array}$
+
+
+
+
+
+
+
+MODULE 3: WAVES and SOUND
+
+Also see Fundamental Principles formulae
+
+\[
+\begin{array}{ll}
+F=k x \quad[\text {spring}] & \left.P E=1 / 2 \mathrm{kx}^{2} \text { [spring }\right] \\
+\mathrm{KE}=1 / 2 \mathrm{mv}^{2} & \text { Total } E=\mathrm{KE}+\mathrm{PE}
+\end{array}
+\]
+
+$\left.T=2 \pi(m / k)^{1 / 2} \text { [mass-spring }\right]$
+
+\[
+f=1 / T
+\]
+
+$T=2 \pi(L / g)^{I / 2}[\text { pendulum }]$
+
+\[
+\omega=2 \pi \mathrm{f}
+\]
+
+$\mathrm{v}=\mathrm{f} \lambda$
+
+\[
+v=(331+0.6 T) \mathrm{m} / \mathrm{s}
+\]
+
+$x=A \cos (\omega t)$
+
+\[
+v=-A \omega \sin (\omega t) \quad a=-A \omega^{2} \cos (\omega t)
+\]
+
+$\mathrm{V}_{\max }=A \omega$
+
+$\mathrm{v}=\sqrt{\frac{\mathrm{k}}{\mathrm{m}}\left(A^{2}-x^{2}\right)} \quad a_{\max }=\omega^{2} A$
+
+Speed of wave in a string/wire, $\mathrm{V}=\sqrt{\frac{\mathrm{F}_{\mathrm{T}}}{\mathrm{m} / \mathrm{L}}}$
+
+
+
+
+
+Speed of wave in a solid, $v=\sqrt{\frac{E}{\rho}}$
+
+Speed of wave in a liquid/gas, $\mathrm{v}=\sqrt{\frac{\mathrm{B}}{\rho}}$
+
+Harmonics: strings/open pipes, $\quad \mathrm{f}_{\mathrm{n}}=\mathrm{n}\left(\frac{v}{2 L}\right) \quad$ Closed pipes, $\mathrm{f}_{\mathrm{n}}=\mathrm{n}\left(\frac{v}{4 L}\right)$
+
+Law of reflection, $\theta_{i}=\theta_{r}$
+
+Law of refraction, $v_{1} \sin \theta_{1}=v_{2} \sin \theta_{2}$
+
+Intensity level $\beta(\mathrm{dB})=10 \log \left(\frac{\mathrm{I}}{\mathrm{I}_{0}}\right)$
+
+where $I_{0}=1.0 \times 10^{-12} W / m^{2}$
+
+
+
+
+
+
+
+
+
+
+
+$\beta_{2}-\beta_{1}=\Delta \beta=\log \left(\frac{I_{2}}{I_{1}}\right) \quad \mathrm{I}=\text { Power } / 4 \pi r^{2}$
+
+
+
+
+
+MODULE 4: THERMAL PHYSICS
+
+$T\left({ }^{o} C\right)=\frac{5}{9}[T(F)-32]$
+
+$\left.\Delta L=\alpha L_{o} \Delta T \text { linear thermal expansion }\right]$
+
+$\left.\Delta V=\beta V_{O} \Delta T \text { [volume thermal expansion }\right]$
+
+$Q=m c \Delta T[\text {Specific heat}]$
+
+$Q=m L[\text {Latent heat}]$
+
+Rate of heat flow by conduction $\frac{\Delta \mathrm{Q}}{\Delta \mathrm{t}}=\mathrm{kA} \frac{\Delta \mathrm{T}}{\mathrm{L}}$
+
+Thermal insulation $\mathrm{R}=\frac{\mathrm{L}}{\mathrm{k}}$
+
+Net flow rate of heat radiation $P=\sigma A e\left(T_{\text {body}}^{4}-T_{\text {enviromment}}^{4}\right)$
+
+$\frac{P_{1} V_{1}}{T_{1}}=\frac{P_{2} V_{2}}{T_{2}}$
+
+
+
+
+
+
+
+$P V=n R T \quad \text { (Ideal gas law) })$
+
+$N=n N_{A} \quad(\mathrm{N}=\text { number of molcules in a gas smaple })$
+
+$P V=N k_{B} T \quad\left(\mathrm{k}_{\mathrm{B}}=\frac{\mathrm{R}}{\mathrm{N}_{\mathrm{A}}}\right)$
+
+$\overline{\mathrm{KE}}=\frac{3}{2} k_{B} T$
+
+(Average KE of a molecule)
+
+$\mathrm{v}_{\mathrm{rms}}=\sqrt{\frac{3 k_{B} T}{m}}(r m s \text { speed of moecule }) \quad$ where $\mathrm{m}$ is the mass of a molecule
+
+
+
+
+
+
+
+MODULE 5: OPTICS
+
+Index of refraction $n=c / \nu \quad$ Snell's Law, $n_{1} \sin \theta_{1}=n_{2} \sin \theta_{2}$
+
+Mirror/Lens formula $\quad(1 / f)=\left(1 / d_{O}\right)+\left(1 / d_{i}\right)$
+
+Magnification $M=-\left(d_{i} / d_{O}\right)=\left(-h_{i} / h_{O}\right)$
+
+Lens makers' formula $(1 / f)=(n-1)\left(1 / R_{1}+1 / R_{2}\right)$
+
+$P=\frac{1}{f(m)}$
+
+Magnifying glass $M_{\text {infinity}}=N / f \quad M_{N}=1+N / f$
+
+
+
+
+
+
+
+
+
+
+
+
+
+Microscope $M=M_{O} M_{e}=(N \times L) / f_{O} f_{e}$
+
+Rayleigh criterion for resolution $\quad \theta_{\min }=1.22 \lambda / \mathrm{D}$
+
+Resolving power of a microscope $S=f(1.22 \lambda / D)$
+
+Brewster's Law $\quad \tan \theta_{\mathrm{p}}=\mathrm{n}_{2} / \mathrm{n}_{1}$
+
+Malus' Law: : : : : : Lawlus' Law:: : : :
+
+$\mathrm{I}=(1 / 2) \mathrm{I}_{\mathrm{O}} \cos ^{2} \theta$
+
+
+
+
+
+
+
+MODULE 6: NUCLEAR RADIATION 
+
+
+
+\begin{tabular}{ll} 
+
+charge on an electron & $=1.6 \times 10^{-19} \mathrm{C}$ \\
+
+$1 \mathrm{eV}$ & $=1.6 \times 10^{-19} \mathrm{J}$ \\
+
+mass of neutron & $=1.008665 \mathrm{u}$ \\
+
+mass of hydrogen atom & $=1.007825 \mathrm{u}$ \\
+
+mass of ${ }^{4} \mathrm{He}$ atom & $=4.002602 \mathrm{u}$ \\
+
+atomic mass unit & $1 \mathrm{u}=1.66 \times 10^{-27} \mathrm{kg},=931.5 \mathrm{MeV} / \mathrm{c}^{2}$ \\
+
+mass of electron & $=9.11 \times 10^{-31} \mathrm{kg}$ \\
+
+mass of proton & $=1.67 \mathrm{x} 10^{-27} \mathrm{kg}$ \\
+
+\hline
+
+\end{tabular}
+
+
+
+
+
+
+
+$f \lambda=c \quad E=h f$
+
+$P=\sigma A e T^{4} \quad \lambda_{M A X} T=2.89 \times 10^{-3} \mathrm{mK}$
+
+$h f=W_{0}+K E_{M A X} \quad K E_{M A X}=e V_{\text {STOPPING}}$
+
+$E_{n}=\frac{-13.6}{n^{2}} e V \quad E=13.6\left(\frac{1}{n_{f}^{2}}-\frac{1}{n_{i}^{2}}\right) e V$
+
+$N=N_{0} \exp (-\lambda t) \quad$ (number of atoms) $\quad A=\lambda N \quad$ (activity)
+
+$A=A_{0} \exp (-\lambda t) \quad T_{1 / 2}=\frac{\ln (2)}{\lambda}$
+
+Binding Energy $=\left(Z m_{p}+N m_{n}-M_{A}\right) \times 931.5 \mathrm{MeV} / u$
+
+Absorbed dose: $1 G y=1 J / k g$ dose $=$ dose rate x time
+
+
+
+
+
+
+
+
+
+Equivalent dose $=$ absorbed dose $\mathrm{x}$ w $\mathrm{R}$
+
+Effective dose $=$ Equivalent dose $\mathrm{x}$ wr
+
+
+
+
+
+
+
+
+
+
+
+\end{tcolorbox}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -654,10 +1089,8 @@ http://w2.syronex.com/jmr/latex-symbols-converter
 
 
 
-\iftoggle{editing}{%
-  % editing
-}{%
-  % finaloutput
+\iftoggle{editing}{% editing
+}{% finaloutput
   \end{multicols}
 }
 
