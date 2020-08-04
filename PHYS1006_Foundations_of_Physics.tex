@@ -39,7 +39,7 @@
 \usepackage{gensymb}
 
 \usepackage{multicol}
-\usepackage{tabu}
+%\usepackage{tabu}
 \usepackage{tabularx}
 
 \usepackage[dvipsnames]{xcolor}
@@ -347,11 +347,11 @@ $\theta=\tan^{-1}{(\frac{\mathbf{v}_y}{\mathbf{v}_x})}$
 
 \markStart[100]
 
-$\theta = $ \begin{tabu}{|c|c|}
+$\theta = $\begin{tabularx}{\textwidth}{|c|c|}
     \hline
 $180 - \theta$ & $\theta$ \\ \hline
 $180 + \theta$ & $360 - \theta$ \\ \hline
-    \end{tabu}???
+    \end{tabularx}???
 
 \end{tcolorbox}
 
@@ -373,7 +373,7 @@ General Kinematic Equations for Constant Acceleration
 in Two Dimensions
 
 
-\begin{tabu}{XX}
+\begin{tabularx}{\textwidth}{@{}X@{}X@{}}
 x component (horizontal) & 
 y component (vertical) \\
 \hline
@@ -385,7 +385,7 @@ $y = y_0 + v_{y0}t + \frac{1}{2}a_yt^2$ \\
 
 $v_x^2 = v_{x0}^2 + 2a_x(x - x_0)$ & 
 $v_y^2 = v_{y0}^2 + 2a_y(y - y_0)$ \\ \hline
-\end{tabu}
+\end{tabularx}
 
 
 
@@ -401,7 +401,7 @@ Kinematic Equations for Projectile Motion
 
 
 
-\begin{tabu}{XX}
+\begin{tabularx}{\textwidth}{@{}X@{}X@{}}
 Horizontal Motion & 
 Vertical Motion \\
 ($a_x = 0, v_x = \text{constant}$) &
@@ -415,7 +415,7 @@ $y = y_0 + v_{y0}t - \frac{1}{2}gt^2$ \\
 
  & 
 $v_y^2 = v_{y0}^2 - 2g(y - y_0)$ \\ \hline
-\end{tabu}
+\end{tabularx}
 
 
 
@@ -649,7 +649,7 @@ elastic potential energy
 DATA
 
 \markStart[50]
-\begin{tabularx}{\textwidth}{Xr@{}l}
+\begin{tabularx}{\textwidth}{@{}X@{}r@{}l@{}}
 Avogadro's number & $\mathrm{N}_{\mathrm{A}}$ & $=6.02 \times 10^{23} \mathrm{mol}^{-1}$ \\
 Planck's constant & $\mathrm{h}$ & $=6.626 \times 10^{-34} \mathrm{J} \mathrm{s}$ \\
 Stephan-Boltzmann's constant & $\sigma$ & $=5.67 \times 10^{-8} \mathrm{W} \mathrm{m}^{-2} \mathrm{K}^{-4}$ \\
@@ -667,7 +667,7 @@ Coulomb constant & $\mathrm{k}$ & $=9.0 \times 10^{9} \mathrm{N} \mathrm{m}^{2} 
 
 \end{tabularx}
 
-\begin{tabularx}{\textwidth}{Xr@{}l}
+\begin{tabularx}{\textwidth}{@{}X@{}r@{}l@{}}
 
 acceleration due to gravity & $\mathrm{g}$ & $=9.80 \mathrm{m} \mathrm{s}^{-2}$ \\
 index of refraction of air (STP) & $\mathrm{n}$ & $=1.0003$ \\
@@ -687,7 +687,7 @@ boiling point of water & & $=100^{\circ} \mathrm{C}=212^{\circ} \mathrm{F}$ \\
 
 \end{tabularx}
 
-\begin{tabularx}{\textwidth}{Xr@{}l}
+\begin{tabularx}{\textwidth}{@{}X@{}r@{}l@{}}
 
 specific heat of water & $\mathrm{c}_{\text {water }}$ & $=4186 \mathrm{J} \mathrm{kg}^{-1} \mathrm{C}^{\circ-1}$ \\
 specific heat of ice & $\quad \mathrm{c}_{\mathrm{ice}}$ & $=2100 \mathrm{J} \mathrm{kg}^{-1} \mathrm{C}^{\circ-1}$ \\
@@ -697,7 +697,7 @@ specific heat of aluminum & $\mathrm{c}_{\mathrm{Al}}$ & $=900 \mathrm{J} \mathr
 
 \end{tabularx}
 
-\begin{tabularx}{\textwidth}{Xr@{}l}
+\begin{tabularx}{\textwidth}{@{}X@{}r@{}l@{}}
 
 latent heat of vaporization of water & & $=2.26 \times 10^{6} \mathrm{J} \mathrm{kg}^{-1}$ \\
 latent heat of fusion of ice & & $=3.33 \times 10^{5} \mathrm{J} \mathrm{kg}^{-1}$ \\
@@ -707,7 +707,7 @@ coefficient of linear expansion of brass & & $=19 \times 10^{-6} \mathrm{C}^{\ci
 
 \end{tabularx}
 
-\begin{tabularx}{\textwidth}{Xr@{}l}
+\begin{tabularx}{\textwidth}{@{}X@{}r@{}l@{}}
 
 charge on an electron & & $=1.6 \times 10^{-19} \mathrm{C}$ \\
 $1 \mathrm{eV}$ & & $=1.6 \times 10^{-19} \mathrm{J}$ \\
@@ -801,7 +801,7 @@ MODULE 2:
 Data
 \markStart[100]
 
-\begin{tabularx}{\textwidth}{Xr@{}l}
+\begin{tabularx}{\textwidth}{@{}X@{}r@{}l@{}}
 
 Charge on electron & & $=1.6 \times 10^{-19} \mathrm{C} \quad$ \\
 
@@ -1002,7 +1002,7 @@ MODULE 6: NUCLEAR RADIATION
 
 \markStart[100]
 
-\begin{tabularx}{\textwidth}{Xr@{}l}
+\begin{tabularx}{\textwidth}{@{}X@{}r@{}l@{}}
 
 charge on an electron & & $=1.6 \times 10^{-19} \mathrm{C}$ \\
 
