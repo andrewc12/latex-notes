@@ -16,8 +16,8 @@
   %\usepackage[20pt]{extsizes}
   \usepackage{extsizes}
   \usepackage{geometry}
-  %\geometry{a6paper, portrait, margin=0.2cm, bottom=1.5cm} %, right=5cm
-  \geometry{a4paper, portrait, margin=0.5cm, bottom=1.5cm} %, right=5cm
+  \geometry{a6paper, portrait, margin=0.2cm, bottom=1.5cm} %, right=5cm
+  %\geometry{a4paper, portrait, margin=0.5cm, bottom=1.5cm} %, right=5cm
 }{% finaloutput
   \usepackage[8pt]{extsizes}
   \usepackage{geometry}
@@ -644,88 +644,72 @@ elastic potential energy
 
 
 
-\markStart[100]
+
 
 DATA
 
+\markStart[50]
 \begin{tabularx}{\textwidth}{Xr@{}l}
 Avogadro's number & $\mathrm{N}_{\mathrm{A}}$ & $=6.02 \times 10^{23} \mathrm{mol}^{-1}$ \\
-
-Planck's constant & & $=6.626 \times 10^{-34} \mathrm{J} \mathrm{s}$ \\
-
-Stephan-Boltzmann's constant & & $=5.67 \times 10^{-8} \mathrm{W} \mathrm{m}^{-2} \mathrm{K}^{-4}$ \\
-
-Boltzmann's constant & & $=1.38 \times 10^{-23} \mathrm{J} \mathrm{K}^{-1}$ \\
+Planck's constant & $\mathrm{h}$ & $=6.626 \times 10^{-34} \mathrm{J} \mathrm{s}$ \\
+Stephan-Boltzmann's constant & $\sigma$ & $=5.67 \times 10^{-8} \mathrm{W} \mathrm{m}^{-2} \mathrm{K}^{-4}$ \\
+Boltzmann's constant & $\mathrm{k}_{\mathrm{B}}$ & $=1.38 \times 10^{-23} \mathrm{J} \mathrm{K}^{-1}$ \\
 
 
 
 Gravitational constant & $\mathrm{G}$ & $=6.67 \times 10^{-11} \mathrm{N} \cdot \mathrm{m}^{2} \cdot \mathrm{kg}^{-2}$ \\
 Radius of the Earth & $\mathrm{R}_{\mathrm{E}}$ & $=6.38 \times 10^{6} \mathrm{m}$ \\
-
 Mass of the Earth & $\mathrm{M}_{\mathrm{E}}$ & $=5.98 \times 10^{24} \mathrm{kg}$ \\
-
 Gas constant & $\mathrm{R}$ & $=8.314 \mathrm{J} / \mathrm{mol} . \mathrm{K}$ \\
-
 Permittivity of free space & $\varepsilon_{\mathrm{o}}$ & $=8.85 \times 10^{-12} \mathrm{C}^{2} / \mathrm{N} \cdot \mathrm{m}^{2}$ \\
-
 Permeability of free space & $\mathrm{\mu o}$ & $=4 \pi \times 10^{-7} \mathrm{T} . \mathrm{m} / \mathrm{A}$ \\
+Coulomb constant & $\mathrm{k}$ & $=9.0 \times 10^{9} \mathrm{N} \mathrm{m}^{2} / \mathrm{C}^{2}$ \\
 
-Coulomb constant & & $=9.0 \times 10^{9} \mathrm{N} \mathrm{m}^{2} / \mathrm{C}^{2}$ \\
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{Xr@{}l}
 
 acceleration due to gravity & $\mathrm{g}$ & $=9.80 \mathrm{m} \mathrm{s}^{-2}$ \\
-
-
-
 index of refraction of air (STP) & $\mathrm{n}$ & $=1.0003$ \\
-
 speed of light (in vacuum) & $\mathrm{c}$ & $=3 \times 10^{8} \mathrm{ms}^{-1}$ \\
-
 speed of sound (at $\left.0^{\circ} \mathrm{C}\right)$ & $\mathrm{v}$ & $=331 \mathrm{ms}^{-1}$ \\
-
 Pi & $\pi$ & $=3.1416$ \\
-
 Volume & $1 \text {litre}$ & $=1000 \mathrm{cm}^{3}$ \\
-
 density of water & $\rho$ & $=1000 \mathrm{kg} \mathrm{m}^{-3}$ \\
-
 density of air & & $=1.29 \mathrm{kg} \mathrm{m}^{-3}$ \\
-
 atmospheric pressure & $1 \mathrm{atm}$ & $=1.013 \times 10^{5} \mathrm{Pa}$ \\
-
 volume of air at STP & & $=22.4 \mathrm{L}$ \\
-
 coefficient of thermal conductivity for brick & & $=0.84 \mathrm{J} \mathrm{m}^{-1} \mathrm{s}^{-1} \mathrm{K}^{-1}$ \\
-
 coefficient of thermal conductivity for glass & & $=0.84 \mathrm{J} \mathrm{m}^{-1} \mathrm{s}^{-1} \mathrm{K}^{-1}$ \\
-
 zero Kelvin & & $=-273^{\circ} \mathrm{C}$ \\
-
 freezing point of water & & $=0^{\circ} \mathrm{C}=32^{\circ} \mathrm{F}$ \\
-
 boiling point of water & & $=100^{\circ} \mathrm{C}=212^{\circ} \mathrm{F}$ \\
 
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{Xr@{}l}
+
 specific heat of water & $\mathrm{c}_{\text {water }}$ & $=4186 \mathrm{J} \mathrm{kg}^{-1} \mathrm{C}^{\circ-1}$ \\
-
 specific heat of ice & $\quad \mathrm{c}_{\mathrm{ice}}$ & $=2100 \mathrm{J} \mathrm{kg}^{-1} \mathrm{C}^{\circ-1}$ \\
-
 specific heat of iron & $\quad \mathrm{c}_{\text {iron }}$ & $=450 \mathrm{J} \mathrm{kg}^{-1} \mathrm{C}^{\circ-1}$ \\
-
 specific heat of copper & $\mathrm{c}_{\mathrm{cu}}$ & $=390 \mathrm{J} \mathrm{kg}^{-1} \mathrm{C}^{\circ-1}$ \\
-
 specific heat of aluminum & $\mathrm{c}_{\mathrm{Al}}$ & $=900 \mathrm{J} \mathrm{kg}^{-1} \mathrm{C}^{\circ-1}$ \\
 
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{Xr@{}l}
+
 latent heat of vaporization of water & & $=2.26 \times 10^{6} \mathrm{J} \mathrm{kg}^{-1}$ \\
-
 latent heat of fusion of ice & & $=3.33 \times 10^{5} \mathrm{J} \mathrm{kg}^{-1}$ \\
-
 coefficient of volume expansion of petrol & & $=950 \times 10^{-6} \mathrm{C}^{\circ-1}$ \\
-
 coefficient of linear expansion of steel/iron & & $=12 \times 10^{-6} \mathrm{C}^{\circ-1}$ \\
-
 coefficient of linear expansion of brass & & $=19 \times 10^{-6} \mathrm{C}^{\circ-1}$ \\
 
-charge on an electron & & $=1.6 \times 10^{-19} \mathrm{C}$ \\
+\end{tabularx}
 
+\begin{tabularx}{\textwidth}{Xr@{}l}
+
+charge on an electron & & $=1.6 \times 10^{-19} \mathrm{C}$ \\
 $1 \mathrm{eV}$ & & $=1.6 \times 10^{-19} \mathrm{J}$ \\
 
 \end{tabularx}
@@ -733,12 +717,12 @@ $1 \mathrm{eV}$ & & $=1.6 \times 10^{-19} \mathrm{J}$ \\
 
 \markEnd
 
-\markStart[25]
 
 
 FORMULA SHEET
 
 MODULE 1: FUNDAMENTALS
+\markStart[25]
 
 $\sin \theta=\frac{\text { opposite }}{\text { hypotenuse }}$
 
@@ -811,11 +795,11 @@ $x=\frac{k^{a} t^{b}}{m^{c} n^{d}} \quad \frac{\Delta x}{x}=a \frac{\Delta k}{k}
 
 \end{tcolorbox}
 
-\markStart[100]
 
 MODULE 2:
 
 Data
+\markStart[100]
 
 \begin{tabularx}{\textwidth}{Xr@{}l}
 
@@ -887,11 +871,12 @@ B=\frac{\mu_{o} I}{2 \pi r} & \frac{V_{S}}{V_{P}}=\frac{N_{S}}{N_{p}}=\frac{I_{P
 
 \end{tcolorbox}
 
-\markStart[100]
+
 
 MODULE 3: WAVES and SOUND
 
 Also see Fundamental Principles formulae
+\markStart[100]
 
 $F=k x \quad[\text {spring}]$
 
@@ -943,9 +928,10 @@ $\beta_{2}-\beta_{1}=\Delta \beta=\log \left(\frac{I_{2}}{I_{1}}\right) \quad \m
 
 \end{tcolorbox}
 
-\markStart[100]
+
 
 MODULE 4: THERMAL PHYSICS
+\markStart[100]
 
 $T\left({ }^{o} C\right)=\frac{5}{9}[T(F)-32]$
 
@@ -980,9 +966,9 @@ $\mathrm{v}_{\mathrm{rms}}=\sqrt{\frac{3 k_{B} T}{m}}(r m s \text { speed of moe
 
 \end{tcolorbox}
 
-\markStart[100]
 
 MODULE 5: OPTICS
+\markStart[100]
 
 Index of refraction $n=c / \nu \quad$ Snell's Law, $n_{1} \sin \theta_{1}=n_{2} \sin \theta_{2}$
 
@@ -1012,9 +998,9 @@ $\mathrm{I}=(1 / 2) \mathrm{I}_{\mathrm{O}} \cos ^{2} \theta$
 
 \end{tcolorbox}
 
-\markStart[100]
-
 MODULE 6: NUCLEAR RADIATION 
+
+\markStart[100]
 
 \begin{tabularx}{\textwidth}{Xr@{}l}
 
