@@ -16,7 +16,8 @@
   %\usepackage[20pt]{extsizes}
   \usepackage{extsizes}
   \usepackage{geometry}
-  \geometry{a6paper, portrait, margin=0.2cm, bottom=1.5cm} %, right=5cm
+  \geometry{paperwidth=105mm,paperheight=575cm, portrait, margin=0.2cm, bottom=1.5cm} %, right=5cm
+  %\geometry{a6paper, portrait, margin=0.2cm, bottom=1.5cm} %, right=5cm
   %\geometry{a4paper, portrait, margin=0.5cm, bottom=1.5cm} %, right=5cm
 }{% finaloutput
   \usepackage[8pt]{extsizes}
@@ -74,6 +75,19 @@
 \newcommand{\markEnd}[0]{
 \end{tcolorbox}
 }
+
+
+
+
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+
+
+
+
+
+
+
 
 \iftoggle{editing}{% editing
 }{% finaloutput
@@ -1074,13 +1088,309 @@ Effective dose $=$ Equivalent dose $\mathrm{x}$ wr
 
 
 
+$\begin{array}{|l|c|l|c|c|}
+
+\end{array}$
+
+
+%https://tex.stackexchange.com/a/89932
+
+\subsection{Named units derived from SI base units}
+\markStart[100]
+%Name & Symbol & Quantity & Equivalents & SI base unit \\
+$
+\begin{tabularx}{\textwidth}{@{}|@{}l@{}|@{}c@{}|@{}X@{}|@{}Y@{}|@{}c@{}|@{}}
+%Name & Symbol & Quantity & Equivalents & SI base unit \\
+
+% \hline
+%Name & Sym & Quantity & Equivalents & SI base unit \\
+% \hline
+%\multicolumn{5}{|@{}l@{}|}{Equivalents} \\
+ \hline
+hertz & Hz & frequency & 1/s & s1 \\
+ \hline
+radian & rad & angle & m/m & 1 \\
+ \hline
+steradian & sr & solid angle & m2/m2 & 1 \\
+ \hline
+newton & N & force, weight & kgm/s2 & kgms2 \\
+ \hline
+pascal & Pa & pressure, stress & N/m2 & kgm1s2 \\
+ \hline
+joule & J & energy, work, heat & mN, CV, Ws & kgm2s2 \\
+ \hline
+watt & W & power, radiant flux & J/s, VA & kgm2s3 \\
+ \hline
+coulomb & C & electric charge or quantity of electricity & sA, FV & sA \\
+ \hline
+volt & V & voltage, electrical potential difference, electromotive force & W/A, J/C & kgm2s3A1 \\
+ \hline
+farad & F & electrical capacitance & C/V, s/ & kg1m2s4A2 \\
+ \hline
+ohm &  & electrical resistance, impedance, reactance & 1/S, V/A & kgm2s3A2 \\
+ \hline
+siemens & S & electrical conductance & 1/, A/V & kg1m2s3A2 \\
+ \hline
+weber & Wb & magnetic flux & J/A, Tm2,Vs & kgm2s2A1 \\
+ \hline
+tesla & T & magnetic induction, magnetic flux density & Vs/m2, Wb/m2, N/(Am) & kgs2A1 \\
+ \hline
+henry & H & electrical inductance & Vs/A, s, Wb/A & kgm2s2A2 \\
+ \hline
+degree Celsius & C & temperature relative to 273.15 K & K & K \\
+ \hline
+lumen & lm & luminous flux & cdsr & cd \\
+ \hline
+lux & lx & illuminance & lm/m2 & cdm2 \\
+ \hline
+becquerel & Bq & radioactivity (decays per unit time) & 1/s & s1 \\
+ \hline
+gray & Gy & absorbed dose (of ionizing radiation) & J/kg & m2s2 \\
+ \hline
+sievert & Sv & equivalent dose (of ionizing radiation) & J/kg & m2s2 \\
+ \hline
+katal & kat & catalytic activity & mol/s & s1mol \\
+ \hline
+
+\end{tabularx}
+$
 
 
 
 
+\end{tcolorbox}
 
 
+\subsection{Kinematic SI derived units}
+\markStart[100]
 
+$
+\begin{tabularx}{\textwidth}{@{}|@{}X@{}|@{}c@{}|@{}X@{}|@{}l@{}|}
+% \hline
+%Name & Symbol & Quantity & Expression in terms of SI base units \\
+ \hline
+metre per second & m/s & speed, velocity & ms1 \\
+ \hline
+metre per second squared & m/s2 & acceleration & ms2 \\
+ \hline
+metre per second cubed & m/s3 & jerk, jolt & ms3 \\
+ \hline
+metre per second to the fourth & m/s4 & snap, jounce & ms4 \\
+ \hline
+radian per second & rad/s & angular velocity & s1 \\
+ \hline
+radian per second squared & rad/s2 & angular acceleration & s2 \\
+ \hline
+hertz per second & Hz/s & frequency drift & s2 \\
+ \hline
+cubic metre per second & m3/s & volumetric flow & m3s1 \\
+ \hline
+\end{tabularx}
+$
+\end{tcolorbox}
+
+
+\subsection{Mechanical SI derived units}
+\markStart[100]
+
+$
+\begin{tabularx}{\textwidth}{@{}|@{}X@{}|@{}c@{}|@{}X@{}|@{}l@{}|}
+% \hline
+%Name & Symbol & Quantity & Expression in terms of SI base units \\
+ \hline
+square metre & m2 & area & m2 \\
+ \hline
+cubic metre & m3 & volume & m3 \\
+ \hline
+newton second & Ns & momentum, impulse & mkgs1 \\
+ \hline
+newton metre second & Nms & angular momentum & m2kgs1 \\
+ \hline
+newton metre & Nm = J/rad & torque, moment of force & m2kgs2 \\
+ \hline
+newton per second & N/s & yank & mkgs3 \\
+ \hline
+reciprocal metre & m1 & wavenumber, optical power, curvature, spatial frequency & m1 \\
+ \hline
+kilogram per square metre & kg/m2 & area density & m2kg \\
+ \hline
+kilogram per cubic metre & kg/m3 & density, mass density & m3kg \\
+ \hline
+cubic metre per kilogram & m3/kg & specific volume & m3kg1 \\
+ \hline
+joule second & Js & action & m2kgs1 \\
+ \hline
+joule per kilogram & J/kg & specific energy & m2s2 \\
+ \hline
+joule per cubic metre & J/m3 & energy density & m1kgs2 \\
+ \hline
+newton per metre & N/m = J/m2 & surface tension, stiffness & kgs2 \\
+ \hline
+watt per square metre & W/m2 & heat flux density, irradiance & kgs3 \\
+ \hline
+square metre per second & m2/s & kinematic viscosity, thermal diffusivity, diffusion coefficient & m2s1 \\
+ \hline
+pascal second & Pas = Ns/m2 & dynamic viscosity & m1kgs1 \\
+ \hline
+kilogram per metre & kg/m & linear mass density & m1kg \\
+ \hline
+kilogram per second & kg/s & mass flow rate & kgs1 \\
+ \hline
+watt per steradian square metre & W/(srm2) & radiance & kgs3 \\
+ \hline
+watt per steradian cubic metre & W/(srm3) & spectral radiance & m1kgs3 \\
+ \hline
+watt per metre & W/m & spectral power & mkgs3 \\
+ \hline
+gray per second & Gy/s & absorbed dose rate & m2s3 \\
+ \hline
+metre per cubic metre & m/m3 & fuel efficiency & m2 \\
+ \hline
+watt per cubic metre & W/m3 & spectral irradiance, power density & m1kgs3 \\
+ \hline
+joule per square metre second & J/(m2s) & energy flux density & kgs3 \\
+ \hline
+reciprocal pascal & Pa1 & compressibility & mkg1s2 \\
+ \hline
+joule per square metre & J/m2 & radiant exposure & kgs2 \\
+ \hline
+kilogram square metre & kgm2 & moment of inertia & m2kg \\
+ \hline
+newton metre second per kilogram & Nms/kg & specific angular momentum & m2s1 \\
+ \hline
+watt per steradian & W/sr & radiant intensity & m2kgs3 \\
+ \hline
+watt per steradian metre & W/(srm) & spectral intensity & mkgs3 \\
+ \hline
+\end{tabularx}
+$
+\end{tcolorbox}
+
+
+\subsection{Molar SI derived units}
+\markStart[100]
+
+$
+\begin{tabularx}{\textwidth}{@{}|@{}X@{}|@{}c@{}|@{}X@{}|@{}l@{}|}
+% \hline
+%Name & Symbol & Quantity & Expression in terms of SI base units \\
+ \hline
+mole per cubic metre & mol/m3 & molarity, amount of substance concentration & m3mol \\
+ \hline
+cubic metre per mole & m3/mol & molar volume & m3mol1 \\
+ \hline
+joule per kelvin mole & J/(Kmol) & molar heat capacity, molar entropy & m2kgs2K1mol1 \\
+ \hline
+joule per mole & J/mol & molar energy & m2kgs2mol1 \\
+ \hline
+siemens square metre per mole & Sm2/mol & molar conductivity & kg1s3A2mol1 \\
+ \hline
+mole per kilogram & mol/kg & molality & kg1mol \\
+ \hline
+kilogram per mole & kg/mol & molar mass & kgmol1 \\
+ \hline
+cubic metre per mole second & m3/(mols) & catalytic efficiency & m3s1mol1 \\
+ \hline
+\end{tabularx}
+$
+\end{tcolorbox}
+
+
+\subsection{Electromagnetic SI derived units }
+\markStart[100]
+
+$
+\begin{tabularx}{\textwidth}{@{}|@{}X@{}|@{}c@{}|@{}X@{}|@{}l@{}|}
+% \hline
+%Name & Symbol & Quantity & Expression in terms of SI base units \\
+ \hline
+coulomb per square metre & C/m2 & electric displacement field, polarization density & m2sA \\
+ \hline
+coulomb per cubic metre & C/m3 & electric charge density & m3sA \\
+ \hline
+ampere per square metre & A/m2 & electric current density & m2A \\
+ \hline
+siemens per metre & S/m & electrical conductivity & m3kg1s3A2 \\
+ \hline
+farad per metre & F/m & permittivity & m3kg1s4A2 \\
+ \hline
+henry per metre & H/m & magnetic permeability & mkgs2A2 \\
+ \hline
+volt per metre & V/m & electric field strength & mkgs3A1 \\
+ \hline
+ampere per metre & A/m & magnetization, magnetic field strength & m1A \\
+ \hline
+coulomb per kilogram & C/kg & exposure (X and gamma rays) & kg1sA \\
+ \hline
+ohm metre & m & resistivity & m3kgs3A2 \\
+ \hline
+coulomb per metre & C/m & linear charge density & m1sA \\
+ \hline
+joule per tesla & J/T & magnetic dipole moment & m2A \\
+ \hline
+square metre per volt second & m2/(Vs) & electron mobility & kg1s2A \\
+ \hline
+reciprocal henry & H1 & magnetic reluctance & m2kg1s2A2 \\
+ \hline
+weber per metre & Wb/m & magnetic vector potential & mkgs2A1 \\
+ \hline
+weber metre & Wbm & magnetic moment & m3kgs2A1 \\
+ \hline
+tesla metre & Tm & magnetic rigidity & mkgs2A1 \\
+ \hline
+ampere radian & Arad & magnetomotive force & A \\
+ \hline
+metre per henry & m/H & magnetic susceptibility & m1kg1s2A2 \\
+ \hline
+\end{tabularx}
+$
+\end{tcolorbox}
+
+
+\subsection{Photometric SI derived units}
+\markStart[100]
+
+$
+\begin{tabularx}{\textwidth}{@{}|@{}X@{}|@{}c@{}|@{}X@{}|@{}l@{}|}
+% \hline
+%Name & Symbol & Quantity & Expression in terms of SI base units \\
+ \hline
+lumen second & lms & luminous energy & scd \\
+ \hline
+lux second & lxs & luminous exposure & m2scd \\
+ \hline
+candela per square metre & cd/m2 & luminance & m2cd \\
+ \hline
+lumen per watt & lm/W & luminous efficacy & m2kg1s3cd \\
+ \hline
+\end{tabularx}
+$
+\end{tcolorbox}
+
+
+\subsection{Thermodynamic SI derived units}
+\markStart[100]
+
+$
+\begin{tabularx}{\textwidth}{@{}|@{}X@{}|@{}c@{}|@{}X@{}|@{}l@{}|}
+% \hline
+%Name & Symbol & Quantity & Expression in terms of SI base units \\
+ \hline
+joule per kelvin & J/K & heat capacity, entropy & m2kgs2K1 \\
+ \hline
+joule per kilogram kelvin & J/(Kkg) & specific heat capacity, specific entropy & m2s2K1 \\
+ \hline
+watt per metre kelvin & W/(mK) & thermal conductivity & mkgs3K1 \\
+ \hline
+kelvin per watt & K/W & thermal resistance & m2kg1s3K \\
+ \hline
+reciprocal kelvin & K1 & thermal expansion coefficient & K1 \\
+ \hline
+kelvin per metre & K/m & temperature gradient & m1K \\
+ \hline
+\end{tabularx}
+$
+\end{tcolorbox}
 
 
 
