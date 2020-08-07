@@ -39,6 +39,8 @@
 \usepackage{amssymb}
 \usepackage{gensymb}
 
+
+
 \usepackage{multicol}
 %\usepackage{tabu}
 \usepackage{tabularx}
@@ -48,9 +50,11 @@
 \usepackage[most]{tcolorbox}
 \tcbuselibrary{breakable}
 
+\usepackage{svg}
+
 %\usepackage[subtle]{savetrees}
 %\usepackage[moderate]{savetrees}
-%\usepackage[extreme]{savetrees}
+\usepackage[extreme]{savetrees}
 
 \raggedright
 \raggedbottom
@@ -1085,7 +1089,7 @@ Effective dose $=$ Equivalent dose $\mathrm{x}$ wr
 
 \end{tcolorbox}
 
-
+$\mathrm{kg^{-}\cdot m^{-}\cdot s^{-2}\cdot A^{-}}$
 
 
 $\begin{array}{|l|c|l|c|c|}
@@ -1107,49 +1111,49 @@ $
 % \hline
 %\multicolumn{5}{|@{}l@{}|}{Equivalents} \\
  \hline
-hertz & Hz & frequency & 1/s & s1 \\
+hertz & Hz & frequency & 1/s & $\mathrm{s^{-1}}$ \\
  \hline
 radian & rad & angle & m/m & 1 \\
  \hline
 steradian & sr & solid angle & m2/m2 & 1 \\
  \hline
-newton & N & force, weight & kgm/s2 & kgms2 \\
+newton & N & force, weight & kgm/s2 & $\mathrm{kg\cdot m\cdot s^{-2}}$ \\
  \hline
-pascal & Pa & pressure, stress & N/m2 & kgm1s2 \\
+pascal & Pa & pressure, stress & N/m2 & $\mathrm{kg\cdot m^{-1}\cdot s^{-2}}$ \\
  \hline
-joule & J & energy, work, heat & mN, CV, Ws & kgm2s2 \\
+joule & J & energy, work, heat & mN, CV, Ws & $\mathrm{kg\cdot m^{2}\cdot s^{-2}}$ \\
  \hline
-watt & W & power, radiant flux & J/s, VA & kgm2s3 \\
+watt & W & power, radiant flux & J/s, VA & $\mathrm{kg\cdot m^{2}\cdot s^{-3}}$ \\
  \hline
-coulomb & C & electric charge or quantity of electricity & sA, FV & sA \\
+coulomb & C & electric charge or quantity of electricity & sA, FV & $s\cdot A$ \\
  \hline
-volt & V & voltage, electrical potential difference, electromotive force & W/A, J/C & kgm2s3A1 \\
+volt & V & voltage, electrical potential difference, electromotive force & W/A, J/C & $\mathrm{kg\cdot m^{2}\cdot s^{-3}\cdot A^{-1}}$ \\
  \hline
-farad & F & electrical capacitance & C/V, s/ & kg1m2s4A2 \\
+farad & F & electrical capacitance & C/V, s/ & $\mathrm{kg^{-1}\cdot m^{-2}\cdot s^{4}\cdot A^{2}}$ \\
  \hline
-ohm &  & electrical resistance, impedance, reactance & 1/S, V/A & kgm2s3A2 \\
+ohm &  & electrical resistance, impedance, reactance & 1/S, V/A & $\mathrm{kg\cdot m^{2}\cdot s^{-3}\cdot A^{-2}}$ \\
  \hline
-siemens & S & electrical conductance & 1/, A/V & kg1m2s3A2 \\
+siemens & S & electrical conductance & 1/, A/V & $\mathrm{kg^{-1}\cdot m^{-2}\cdot s^{3}\cdot A^{2}}$ \\
  \hline
-weber & Wb & magnetic flux & J/A, Tm2,Vs & kgm2s2A1 \\
+weber & Wb & magnetic flux & J/A, Tm2,Vs & $\mathrm{kg\cdot m^{2}\cdot s^{-2}\cdot A^{-1}}$ \\
  \hline
-tesla & T & magnetic induction, magnetic flux density & Vs/m2, Wb/m2, N/(Am) & kgs2A1 \\
+tesla & T & magnetic induction, magnetic flux density & Vs/m2, Wb/m2, N/(Am) & $\mathrm{kg\cdot s^{-2}\cdot A^{-1}}$ \\
  \hline
-henry & H & electrical inductance & Vs/A, s, Wb/A & kgm2s2A2 \\
+henry & H & electrical inductance & Vs/A, s, Wb/A & $\mathrm{kg\cdot m^{2}\cdot s^{-2}\cdot A^{-2}}$ \\
  \hline
 degree Celsius & C & temperature relative to 273.15 K & K & K \\
  \hline
 lumen & lm & luminous flux & cdsr & cd \\
  \hline
-lux & lx & illuminance & lm/m2 & cdm2 \\
+lux & lx & illuminance & lm/m2 & $\mathrm{cd\cdot m^{-2}}$ \\
  \hline
-becquerel & Bq & radioactivity (decays per unit time) & 1/s & s1 \\
+becquerel & Bq & radioactivity (decays per unit time) & 1/s & $\mathrm{s^{-1}}$ \\
  \hline
-gray & Gy & absorbed dose (of ionizing radiation) & J/kg & m2s2 \\
+gray & Gy & absorbed dose (of ionizing radiation) & J/kg & $\mathrm{m^{2}\cdot s^{-2}}$ \\
  \hline
-sievert & Sv & equivalent dose (of ionizing radiation) & J/kg & m2s2 \\
+sievert & Sv & equivalent dose (of ionizing radiation) & J/kg & $\mathrm{m^{2}\cdot s^{-2}}$ \\
  \hline
-katal & kat & catalytic activity & mol/s & s1mol \\
+katal & kat & catalytic activity & mol/s & $\mathrm{s^{-1}\cdot mol}$ \\
  \hline
 
 \end{tabularx}
@@ -1169,21 +1173,21 @@ $
 % \hline
 %Name & Symbol & Quantity & Expression in terms of SI base units \\
  \hline
-metre per second & m/s & speed, velocity & ms1 \\
+metre per second & m/s & speed, velocity & $\mathrm{m\cdot s^{-1}}$ \\
  \hline
-metre per second squared & m/s2 & acceleration & ms2 \\
+metre per second squared & m/s2 & acceleration & $\mathrm{m\cdot s^{-2}}$ \\
  \hline
-metre per second cubed & m/s3 & jerk, jolt & ms3 \\
+metre per second cubed & m/s3 & jerk, jolt & $\mathrm{m\cdot s^{-3}}$ \\
  \hline
-metre per second to the fourth & m/s4 & snap, jounce & ms4 \\
+metre per second to the fourth & m/s4 & snap, jounce & $\mathrm{m\cdot s^{-4}}$ \\
  \hline
-radian per second & rad/s & angular velocity & s1 \\
+radian per second & rad/s & angular velocity & $\mathrm{s^{-1}}$ \\
  \hline
-radian per second squared & rad/s2 & angular acceleration & s2 \\
+radian per second squared & rad/s2 & angular acceleration & $\mathrm{s^{-2}}$ \\
  \hline
-hertz per second & Hz/s & frequency drift & s2 \\
+hertz per second & Hz/s & frequency drift & $\mathrm{s^{-2}}$ \\
  \hline
-cubic metre per second & m3/s & volumetric flow & m3s1 \\
+cubic metre per second & m3/s & volumetric flow & $\mathrm{m^{3}\cdot s^{-1}}$ \\
  \hline
 \end{tabularx}
 $
@@ -1391,6 +1395,113 @@ kelvin per metre & K/m & temperature gradient & m1K \\
 \end{tabularx}
 $
 \end{tcolorbox}
+
+
+
+
+\section{Newton's Laws of Motion}
+
+\markStart[100]
+\subsection{First law}
+
+An object at rest remains at rest unless a net force acts on it.
+
+An object moving with constant velocity continues to move
+with same speed and in the same direction unless a net force
+acts on it.
+
+
+
+
+
+What is a Free-body diagram? Or Force diagram
+ A diagram that shows all the forces acting On the
+object only and not by the object.
+ To draw FBD - Represent the object of interest as a
+dot on the origin of a co-ordinate system.
+ Isolate the object and draw all the forces acting on the
+object.
+ Find the resultant force acting on the object and apply
+Newton’s law.
+
+https://www.phyley.com/freebody-diagram
+
+%https://ipfs-sec.stackexchange.cloudflare-ipfs.com/tex/A/question/122871.html
+%https://tex.stackexchange.com/a/284532
+%https://tex.stackexchange.com/questions/188785/tex-live-unable-to-call-inkscape-svg-package
+\includesvg{freebody.svg}
+
+force is in newtons
+
+ $\Sigma F = N - W = 0$
+ 
+ $\Sigma F = N - ma = N - mg = 0$
+
+sum of all forces = normal force - weight = 0
+
+\end{tcolorbox}
+
+
+\markStart[100]
+\subsection{Second Law}
+
+When a net force acts on
+an object, it experiences acceleration.
+
+
+
+$\Sigma F=m a \Rightarrow a=\frac{\Sigma F}{m}$
+
+A 50 kg crate is being pulled with a constant force of $200 \mathrm{N}$ on a frictionless surface. Find its acceleration.
+
+$\Sigma F_{x}=m a_{x} \quad \Sigma F_{y}=m a_{y}$
+
+$200=50 a \quad N-(50 \times 9.8)=0$
+
+$a=4 m / s^{2} \quad N=490 N$
+
+
+
+Exercise. What force is needed to stop a 1000 kg
+car in 6 s if it is traveling at 90 km/h? (Assume
+constant acceleration)
+
+v=\frac{90 \times 10^{3} m}{60 \times 60}=25 \mathrm{m} / \mathrm{s}
+
+
+
+
+
+
+
+
+
+
+\end{tcolorbox}
+
+
+
+
+\markStart[100]
+\subsection{Third Law}
+
+
+
+Whenever one body exerts a force on a
+second body, the second body exerts an equal and
+opposite force on the first body.
+
+These are called Action-Reaction forces.
+
+
+Note: Action and Reaction Forces
+act on different objects.
+
+
+\end{tcolorbox}
+
+
+
 
 
 
