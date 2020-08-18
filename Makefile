@@ -12,7 +12,8 @@
 PDFLATEX = /mnt/c/texlive/2020/bin/win32/pdflatex.exe
 LATEX = /mnt/c/texlive/2020/bin/win32/latex.exe
 DVIPNG = /mnt/c/texlive/2020/bin/win32/dvipng.exe
-CFLAGS = 
+CFLAGS =  --shell-escape --enable-write18 -synctex=1 
+#-interaction=nonstopmode
 TEX = PHYS1006_Foundations_of_Physics
 
 
